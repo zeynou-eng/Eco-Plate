@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fr"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>EcoPlate – My Food</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<nav><a class="logo" href="index.html">🌿 EcoPlate</a>
+<div><a href="index.html">Home</a><a href="food.html">My Food</a><a href="recipes.html">Recipes</a></div></nav>
+<main>
+<div class="card"><h2>Ajouter un aliment</h2>
+<form id="form">
+<input id="nom" placeholder="Nom de l'aliment" required>
+<input id="quantite" type="number" min="1" placeholder="Quantité" required>
+<input id="date" type="date" required>
+<button class="btn" type="submit">Add Food</button>
+</form></div>
+<div class="card" style="margin-top:20px"><h2>Mes aliments</h2>
+<table><thead><tr><th>Aliment</th><th>Quantité</th><th>Date</th><th>Statut</th><th></th></tr></thead>
+<tbody id="list"></tbody></table></div>
+</main>
+<script src="js/food.js"></script>
+</body></html>
